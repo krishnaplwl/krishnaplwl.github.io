@@ -50,7 +50,7 @@ body::after {
   z-index: 1;
   margin-top: -30vh;
   margin-bottom: 30vh;
-  margin-left: -10vh;
+  margin-left: 0;
 }
 
 .hero-box {
@@ -251,8 +251,56 @@ footer a:hover {
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .hero h1 { font-size: 2.8rem; }
-  section h2 { font-size: 2rem; }
-  .hero-box { padding: 30px 35px; }
+@media (max-width: 768px) {
+  .hero {
+    margin-top: -15vh;
+    margin-bottom: 15vh;
+    margin-left: 0;
+  }
+  
+  .hero h1 { 
+    font-size: 2.8rem; 
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  section h2 { 
+    font-size: 2rem; 
+  }
+  
+  .hero-box { 
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin: 0 10px;
+  }
+  
+  section {
+    padding: 50px 15px;
+  }
+  
+  .hero-buttons {
+    margin-top: 24px;
+    gap: 10px;
+  }
+  
+  button, .btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-buttons {
+    gap: 10px;
+  }
+  
+  .contact-buttons .btn {
+    min-width: 140px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
 }
