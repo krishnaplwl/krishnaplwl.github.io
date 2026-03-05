@@ -17,8 +17,6 @@
         />
 
         <link rel="stylesheet" href="style.css" />
-
-        <style></style>
     </head>
 
     <body>
@@ -29,16 +27,13 @@
 
                 <div class="hero-buttons">
                     <button onclick="scrollToSection('projects')">
-                        View Projects
+                        Projects
                     </button>
                     <button onclick="scrollToSection('experience')">
                         Experience
                     </button>
-                    <button onclick="scrollToSection('profiles')">
-                        My Profiles
-                    </button>
                     <button onclick="scrollToSection('contact')">
-                        Contact Me
+                        Contact
                     </button>
                 </div>
             </div>
@@ -62,7 +57,11 @@
             <h2>Experience</h2>
 
             <div class="experience-list">
-                <div class="experience-card">
+                <div
+                    class="experience-card"
+                    onclick="window.open('https://coqatalyst.org', '_blank')"
+                    style="cursor: pointer"
+                >
                     <div class="experience-header">
                         <img
                             src="coqatalyst_logo.png"
@@ -315,6 +314,7 @@
                 >LinkedIn</a
             >
         </footer>
+
         <script src="script.js"></script>
     </body>
 </html>
